@@ -9,8 +9,7 @@ My goal is to continue to develop in the field of IT development. Ready to study
 * CSS
 * JavaScript (basics)
 ## Code examples.
-HTML          | JS
-------------- | -------------
+**HTML**
  ```<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -33,11 +32,15 @@ HTML          | JS
       <div>Ответ:<span class="result"></span></div>
       <script src="js/script.js"></script>
 </body>
-</html> ```| ```btnElement = document.querySelector(".btn");
+</html> 
+```
+**JS**
+ ```btnElement = document.querySelector(".btn");
 resultElement = document.querySelector(".result");
 firstNameElement = document.querySelector(".firstname");
 lastNameElement = document.querySelector(".lastname");
 
 btnElement.addEventListener("click", function(){
     resultElement.innerHTML = `Здравствуйте,${firstNameElement.value} ${lastNameElement.value}!` ;
-})```
+})
+```
