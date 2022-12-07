@@ -10,16 +10,7 @@ My goal is to continue to develop in the field of IT development. Ready to study
 * JavaScript (basics)
 ## Code examples.
 **HTML**
- ```<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
-</head>
-<body>
+ ```<body>
     <div>
         <label for="name">Имя:</label>
         <input class="firstname" type="text" id="name" name="name">
