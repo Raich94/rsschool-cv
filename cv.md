@@ -10,23 +10,24 @@ My goal is to continue to develop in the field of IT development. Ready to study
 * JavaScript (basics)
 ## Code examples.
 **HTML**
- ```<body>
+ ```html
+<body>
     <div>
         <label for="name">Имя:</label>
         <input class="firstname" type="text" id="name" name="name">
-      </div>
-      <div>
+    </div>
+    <div>
         <label for="surname">Фамилия:</label>
         <input class="lastname" type="text" id="surname" name="surname">  
-      </div>
-      <button tape="submit" class="btn">Отправить</button>
-      <div>Ответ:<span class="result"></span></div>
-      <script src="js/script.js"></script>
+    </div>
+    <button tape="submit" class="btn">Отправить</button>
+    <div>Ответ:<span class="result"></span></div>
+    <script src="js/script.js"></script>
 </body>
-</html> 
 ```
 **JS**
- ```btnElement = document.querySelector(".btn");
+ ```javascript
+btnElement = document.querySelector(".btn");
 resultElement = document.querySelector(".result");
 firstNameElement = document.querySelector(".firstname");
 lastNameElement = document.querySelector(".lastname");
