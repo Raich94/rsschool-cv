@@ -44,3 +44,10 @@ btnElement.addEventListener("click", function(){
     resultElement.innerHTML = `Здравствуйте,${firstNameElement.value} ${lastNameElement.value}!` ;
 })
 ```
+## Work experience.
+Self-study.  Many different sources, using html, CSS and a little JS.
+## Education.
+Several certificates for https://stepik.org/.
+## Languages.
+* Russian native
+* English (A2)
