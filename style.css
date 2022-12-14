@@ -1,0 +1,130 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    background-color: #857e7e;
+}
+
+.container {
+    box-sizing: border-box;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+.header__list {
+    display: flex;
+    justify-content: end;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0;
+    padding: 10px 0;
+}
+
+.header__link {
+    list-style-type: none;
+    margin: 0 20px 0 0;
+}
+
+.header__link a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.header__link a:hover {
+    color: #232336;
+}
+
+.main {
+    flex-grow: 1;
+    background-color: #ffe4c4;
+    padding-top: 10px;
+}
+
+.who__row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.who__photo {
+    max-width: 200px;
+    flex: 0 0 200px;
+    flex-basis: 50%;
+}
+
+.who__photo img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.who__text {
+    flex-basis: 50%;
+    text-align: center;
+}
+
+.who__title {
+    font-size: 30px;
+}
+
+.who__subtitle {
+    font-size: 20px;
+}
+
+.title {
+    border-bottom: 2px solid #000000 ;
+}
+
+.contacts__item a {
+    color: #000000;
+}
+
+.code__subtitle {
+    padding-left: 50px;
+}
+
+.code__coding {
+    position: relative;
+    right: 100px;
+}
+
+.footer {
+    background-color: #857e7e;
+}
+
+.footer__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 5px 20px;
+}
+
+.github__link {
+    text-decoration: none;
+    color: #000000;
+    font-weight: 700;
+    padding: 5px 0 5px 30px;
+    background-image: url('./img/icons8-github.svg');
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position: left center;
+}
+
+.footer__date {
+    font-weight: 700;
+    color: #000000;
+}
+
+.rsschool__logo {
+    width: 80px;
+}

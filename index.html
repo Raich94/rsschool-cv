@@ -4,9 +4,139 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <title>CV#3</title>
 </head>
 <body>
-    <p>Hello, world!!!</p>
+   <header class="header">
+    <div class="container">
+        <nav class="header__row">
+            <ul class="header__list">
+                <li class="header__link"><a href="#contacts">Contacts</a></li>
+                <li class="header__link"><a href="#about_me">About me</a></li>
+                <li class="header__link"><a href="#skills">Skills</a></li>
+                <li class="header__link"><a href="#code">Code</a></li>
+                <li class="header__link"><a href="#work">Work experience</a></li>
+                <li class="header__link"><a href="#education">Education</a></li>
+                <li class="header__link"><a href="#languages">Languages</a></li>
+            </ul>
+        </nav>
+    </div>
+   </header>  
+   <main class="main">
+    <section class="who">
+        <div class="container">
+            <div class="who__row">
+                <div class="who__photo">
+                    <img src="./img/photo.png" alt="my photo">
+                </div>
+                <div class="who__text">
+                    <h1 class="who__title">Alexander Dmitriev</h1>
+                    <p class="who__subtitle">Junior Front-end Developer</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contacts" id="contacts">
+        <div class="container">
+            <h2 class="contacts__title title">Contacts</h2>
+            <ul class="contacts__list">
+                <li class="contacts__item"><a href="https://github.com/Raich94" target="_blank">Github</a></li>
+                <li class="contacts__item">Discord: Alexander Dmitriev(@Raich94)</li>
+            </ul>
+        </div>
+    </section>
+    <section class="about_me" id="about_me">
+        <div class="container">
+            <h2 class="about_me__title title">About me</h2>
+            <p class="about_me__text">My goal is to continue to develop in the field of IT development. Ready to study hard.</p>
+        </div>
+    </section>
+    <section class="skills" id="skills">
+        <div class="container">
+            <h2 class="skills__title title">Skills</h2>
+            <ul class="skills__list">
+                <li class="skills__item">HTML</li>
+                <li class="skills__item">CSS</li>
+                <li class="skills__item">JavaScript (basics)</li>
+            </ul>
+        </div>
+    </section>
+    <section class="code" id="code">
+        <div class="container">
+            <h2 class="code__title title">Code examples</h2>
+            <div class="code__main">
+                <h3 class="code__subtitle">HTML</h3>
+                <div class="code__coding">
+                    <pre><code>
+                        &lt;body&gt;
+                            &lt;div&gt;
+                                &lt;label for=&quot;name&quot;&gt;Имя:&lt;/label&gt;
+                                &lt;input class=&quot;firstname&quot; type=&quot;text&quot; id=&quot;name&quot; name=&quot;name&quot;&gt;
+                            &lt;/div&gt;
+                            &lt;div&gt;
+                                &lt;label for=&quot;surname&quot;&gt;Фамилия:&lt;/label&gt;
+                                &lt;input class=&quot;lastname&quot; type=&quot;text&quot; id=&quot;surname&quot; name=&quot;surname&quot;&gt;  
+                            &lt;/div&gt;
+                            &lt;button tape=&quot;submit&quot; class=&quot;btn&quot;&gt;Отправить&lt;/button&gt;
+                            &lt;div&gt;Ответ:&lt;span class=&quot;result&quot;&gt;&lt;/span&gt;&lt;/div&gt;
+                            &lt;script src=&quot;js/script.js&quot;&gt;&lt;/script&gt;
+                        &lt;/body&gt;
+                    </code></pre>
+                </div>
+                <h3 class="code__subtitle">JS</h3>
+                <div class="code__coding">
+                    <pre><code>
+                        btnElement = document.querySelector(&quot;.btn&quot;);
+                        resultElement = document.querySelector(&quot;.result&quot;);
+                        firstNameElement = document.querySelector(&quot;.firstname&quot;);
+                        lastNameElement = document.querySelector(&quot;.lastname&quot;);
+                        
+                        btnElement.addEventListener(&quot;click&quot;, function(){
+                           resultElement.innerHTML = &#x60;Здравствуйте,${firstNameElement.value} ${lastNameElement.value}!&#x60; ;
+                        })
+                    </code></pre>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="work" id="work">
+        <div class="container">
+            <h2 class="work__title title">Work experience</h2>
+            <p class="work__text">Self-learning. Lots of different courses using html, css and some js.</p>
+            <p class="work__text"><a href="https://github.com/Raich94/rsschool-cv/tree/rsschool-cv-html" target="_blank">link</a> to the code of this project on github</p>
+        </div>
+    </section>
+    <section class="education" id="education">
+        <div class="container">
+            <h2 class="education__title title">Education</h2>
+            <p class="education__text">Several certificates for <a href="https://stepik.org/" target="_blank">stepik.org</a>.</p>
+        </div>
+    </section>
+    <section class="languages" id="languages">
+        <div class="container">
+            <h2 class="languages__title title">Languages</h2>
+            <ul class="languages__list">
+                <li class="languages__item">Russian native</li>
+                <li class="languages__item">English (A2)</li>
+            </ul>
+        </div>
+    </section>
+   </main>
+   <footer class="footer">
+    <div class="container">
+        <div class="footer__row">
+            <div class="footer__github github">
+                <a href="https://github.com/Raich94" class="github__link" target="_blank"><span></span>Raich94</a>
+            </div>
+            <p class="footer__date">2022</p>
+            <div class="footer__rsschool rsschool">
+                <a href="https://rs.school/js/" class="rsschool__link" target="_blank">
+                    <img class="rsschool__logo" src="./img/rs_school_js.svg" alt="rsschool logo">
+                </a>
+            </div>
+        </div>
+    </div>
+   </footer>
 </body>
 </html>
