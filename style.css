@@ -1,27 +1,28 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
-    padding: 0;
-}
-
-.container {
-    border: 1px solid black;
-    width: 80%;
-    margin: 0 auto;
 }
 
 .header {
-    background-color: #363434;
+    background-color: #857e7e;
+}
+
+.container {
+    border: 1px solid red;
+    max-width: 1280px;
+    margin: 0 auto;
 }
 
 .header__row {
-    display: flex;
-    justify-content: center;
 }
 
 .header__list {
     display: flex;
-    padding: 0;
+    justify-content: end;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0;
+    padding: 10px 0;
 }
 
 .header__link {
@@ -29,16 +30,49 @@ body {
     margin: 0 20px 0 0;
 }
 
-.header__link:last-child {
-    margin: 0;
-}
-
 .header__link a {
-    color: #dbd7d7;
+    color: #fcfafa;
     text-decoration: none;
     font-weight: 700;
 }
 
 .header__link a:hover {
-    color: #806c6c;
+    color: #232336;
+}
+
+.main {
+}
+
+.who {
+}
+
+.who__row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.who__photo {
+    max-width: 200px;
+    flex: 0 0 200px;
+    flex-basis: 50%;
+}
+
+.who__photo img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.who__text {
+    flex-basis: 50%;
+    text-align: center;
+}
+
+.who__title {
+    font-size: 30px;
+}
+
+.who__subtitle {
+    font-size: 20px;
 }
