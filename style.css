@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     min-height: 100vh;
-    overflow: hidden;
+    overflow: auto;
     display: flex;
     flex-direction: column;
 }
@@ -13,12 +13,10 @@ body {
 }
 
 .container {
-    border: 1px solid red;
+    box-sizing: border-box;
     max-width: 1280px;
     margin: 0 auto;
-}
-
-.header__row {
+    padding: 0 30px;
 }
 
 .header__list {
@@ -47,9 +45,8 @@ body {
 
 .main {
     flex-grow: 1;
-}
-
-.who {
+    background-color: #ffe4c4;
+    padding-top: 10px;
 }
 
 .who__row {
@@ -83,21 +80,35 @@ body {
     font-size: 20px;
 }
 
+.title {
+    border-bottom: 2px solid #000000 ;
+}
 
+.contacts__item a {
+    color: #000000;
+}
 
+.code__subtitle {
+    padding-left: 50px;
+}
+
+.code__coding {
+    position: relative;
+    right: 100px;
+}
 
 .footer {
     background-color: #857e7e;
 }
+
 .footer__row {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    padding: 0 20px;
+    padding: 5px 20px;
 }
-.footer__github {
-}
+
 .github__link {
     text-decoration: none;
     color: #000000;
@@ -108,14 +119,12 @@ body {
     background-size: 30px;
     background-position: left center;
 }
+
 .footer__date {
     font-weight: 700;
     color: #000000;
 }
-.footer__rsschool {
-}
-.rsschool__link {
-}
+
 .rsschool__logo {
     width: 80px;
 }
