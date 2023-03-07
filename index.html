@@ -66,24 +66,6 @@
         <div class="container">
             <h2 class="code__title title">Code examples</h2>
             <div class="code__main">
-                <h3 class="code__subtitle">HTML</h3>
-                <div class="code__coding">
-                    <pre><code>
-                        &lt;body&gt;
-                            &lt;div&gt;
-                                &lt;label for=&quot;name&quot;&gt;Имя:&lt;/label&gt;
-                                &lt;input class=&quot;firstname&quot; type=&quot;text&quot; id=&quot;name&quot; name=&quot;name&quot;&gt;
-                            &lt;/div&gt;
-                            &lt;div&gt;
-                                &lt;label for=&quot;surname&quot;&gt;Фамилия:&lt;/label&gt;
-                                &lt;input class=&quot;lastname&quot; type=&quot;text&quot; id=&quot;surname&quot; name=&quot;surname&quot;&gt;
-                            &lt;/div&gt;
-                            &lt;button tape=&quot;submit&quot; class=&quot;btn&quot;&gt;Отправить&lt;/button&gt;
-                            &lt;div&gt;Ответ:&lt;span class=&quot;result&quot;&gt;&lt;/span&gt;&lt;/div&gt;
-                            &lt;script src=&quot;js/script.js&quot;&gt;&lt;/script&gt;
-                        &lt;/body&gt;
-                    </code></pre>
-                </div>
                 <h3 class="code__subtitle">JS</h3>
                 <div class="code__coding">
                     <pre><code>
@@ -91,7 +73,6 @@
                         resultElement = document.querySelector(&quot;.result&quot;);
                         firstNameElement = document.querySelector(&quot;.firstname&quot;);
                         lastNameElement = document.querySelector(&quot;.lastname&quot;);
-
                         btnElement.addEventListener(&quot;click&quot;, function(){
                            resultElement.innerHTML = &#x60;Здравствуйте,${firstNameElement.value} ${lastNameElement.value}!&#x60; ;
                         })
