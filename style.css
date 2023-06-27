@@ -43,7 +43,7 @@ body {
     color: #232336;
 }
 
-.main {
+/* .main {
     flex-grow: 1;
     background-color: #ffe4c4;
     padding-top: 10px;
@@ -95,7 +95,7 @@ body {
 .code__coding {
     position: relative;
     right: 100px;
-}
+} */
 
 .footer {
     background-color: #857e7e;
