@@ -37,72 +37,83 @@
             </div>
         </div>
     </section>
-    <section class="contacts" id="contacts">
+    <div class="content">
         <div class="container">
-            <h2 class="contacts__title title">Contacts</h2>
-            <ul class="contacts__list">
-                <li class="contacts__item"><a href="https://github.com/Raich94" target="_blank">Github</a></li>
-                <li class="contacts__item">Discord: Alexander Dmitriev(@Raich94)</li>
-            </ul>
-        </div>
-    </section>
-    <section class="about_me" id="about_me">
-        <div class="container">
-            <h2 class="about_me__title title">About me</h2>
-            <p class="about_me__text">My goal is to continue to develop in the field of IT development. Ready to study hard.</p>
-        </div>
-    </section>
-    <section class="skills" id="skills">
-        <div class="container">
-            <h2 class="skills__title title">Skills</h2>
-            <ul class="skills__list">
-                <li class="skills__item">HTML</li>
-                <li class="skills__item">CSS</li>
-                <li class="skills__item">JavaScript (basics)</li>
-            </ul>
-        </div>
-    </section>
-    <section class="code" id="code">
-        <div class="container">
-            <h2 class="code__title title">Code examples</h2>
-            <div class="code__main">
-                <h3 class="code__subtitle">JS</h3>
-                <div class="code__coding">
-                    <pre><code>
-                        btnElement = document.querySelector(&quot;.btn&quot;);
-                        resultElement = document.querySelector(&quot;.result&quot;);
-                        firstNameElement = document.querySelector(&quot;.firstname&quot;);
-                        lastNameElement = document.querySelector(&quot;.lastname&quot;);
-                        btnElement.addEventListener(&quot;click&quot;, function(){
-                           resultElement.innerHTML = &#x60;Здравствуйте,${firstNameElement.value} ${lastNameElement.value}!&#x60; ;
-                        })
-                    </code></pre>
+            <div class="content__row">
+                <div class="content__right">
+                    <section class="about_me" id="about_me">
+                            <h2 class="about_me__title title">About me</h2>
+                            <p class="about_me__text">After I realized that I wanted to change jobs, at the end of 2022 I started doing front-end on my own. I was advised rss school. I passed stage 0, but at the end of stage 1 I had to leave the course (although the grade was not bad). And here I am again at 0). My goal is to continue to develop in the field of IT development. Ready to study hard.</p>
+                    </section>
+                    <section class="code" id="code">
+                            <h2 class="code__title title">Code examples</h2>
+                            <div class="code__main">
+                                <div class="code__coding">
+                                    <pre><code>
+                                        function repeatStr (n, s) {
+                                            let i = 1;
+                                            let result = '';
+                                            while (i &#8249;= n){
+                                              result = `${result}${s}`
+                                              ++i
+                                            }
+                                            return result;
+                                        }
+                                    </code></pre>
+                                </div>
+                            </div>
+                    </section>
+                    <section class="work" id="work">
+                            <h2 class="work__title title">Work experience</h2>
+                            <div class="work__content">
+                                <a href="https://raich94.github.io/shelter/pages/main/" class="work__link" title="shelter" target="_blank"><img src="img/shelter.png" alt="shelter"></a>
+                                <a href="https://raich94.github.io/plants/" class="work__link" title="plants" target="_blank"><img src="img/plants.png" alt="plants"></a>
+                                <a href="https://raich94.github.io/momentum/" class="work__link" title="momentum" target="_blank"><img src="img/momentum.png" alt="momentum"></a>
+                                <a href="https://raich94.github.io/virtual-keyboard/" class="work__link" title="virtual-keyboard" target="_blank"><img src="img/virtual-keyboard.png" alt="virtual-keyboard"></a>
+                            </div>
+                    </section>
+                    <section class="education" id="education">
+                            <h2 class="education__title title">Education</h2>
+                            <p class="education__text">JS/FE Pre-School 2022Q4 : December 2022 - March 2023</p>
+                            <p class="education__text">JavaScript/Front-end 2023Q1 : March 2023 - continues</p>
+                            <p class="education__text">JS/FE Pre-School 2023Q2 : June 2023 - continues</p>
+                        </section>
+                </div>
+                <div class="content__left">
+                    <section class="contacts" id="contacts">
+                            <h2 class="contacts__title title">Contacts</h2>
+                            <ul class="contacts__list">
+                                <li class="contacts__item github"><a href="https://github.com/Raich94" target="_blank">Github</a></li>
+                                <li class="contacts__item discord">Discord: Alexander Dmitriev(@Raich94)</li>
+                                <li class="contacts__item telegram">Telegram: @raich94</li>
+                                <li class="contacts__item email">Email: raichxxx@mail.ru</li>
+                            </ul>
+                    </section>
+                    <section class="skills" id="skills">
+                            <h2 class="skills__title title">Skills</h2>
+                            <ul class="skills__list">
+                                <li class="skills__item html">HTML</li>
+                                <li class="skills__item css">CSS</li>
+                                <li class="skills__item js">JavaScript</li>
+                                <li class="skills__item git">Git</li>
+                                <li class="skills__item nodejs">Node.js</li>
+                            </ul>
+                    </section>
+                    <section class="languages" id="languages">
+                            <h2 class="languages__title title">Languages</h2>
+                            <ul class="languages__list">
+                                <li class="languages__item">Russian native</li>
+                                <li class="languages__item">English (A2)</li>
+                            </ul>
+                    </section>
+                    <section class="certificate">
+                        <h2 class="certificate__title title">Certificate</h2>
+                        <a href="https://app.rs.school/certificate/rytfar1d" class="certificate__link" title="certificate" target="_blank"><img src="img/certificate.png" alt="certificate"></a>
+                    </section>
                 </div>
             </div>
         </div>
-    </section>
-    <section class="work" id="work">
-        <div class="container">
-            <h2 class="work__title title">Work experience</h2>
-            <p class="work__text">Self-learning. Lots of different courses using html, css and some js.</p>
-            <p class="work__text"><a href="https://github.com/Raich94/rsschool-cv/tree/rsschool-cv-html" target="_blank">link</a> to the code of this project on github</p>
-        </div>
-    </section>
-    <section class="education" id="education">
-        <div class="container">
-            <h2 class="education__title title">Education</h2>
-            <p class="education__text">Several certificates for <a href="https://stepik.org/" target="_blank">stepik.org</a>.</p>
-        </div>
-    </section>
-    <section class="languages" id="languages">
-        <div class="container">
-            <h2 class="languages__title title">Languages</h2>
-            <ul class="languages__list">
-                <li class="languages__item">Russian native</li>
-                <li class="languages__item">English (A2)</li>
-            </ul>
-        </div>
-    </section>
+    </div>
    </main>
    <footer class="footer">
     <div class="container">
@@ -110,7 +121,7 @@
             <div class="footer__github github">
                 <a href="https://github.com/Raich94" class="github__link" target="_blank"><span></span>Raich94</a>
             </div>
-            <p class="footer__date">2022</p>
+            <p class="footer__date">2023</p>
             <div class="footer__rsschool rsschool">
                 <a href="https://rs.school/js/" class="rsschool__link" target="_blank">
                     <img class="rsschool__logo" src="./img/rs_school_js.svg" alt="rsschool logo">
