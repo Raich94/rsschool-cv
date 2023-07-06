@@ -1,3 +1,6 @@
+html {
+    scroll-behavior: smooth;
+}
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
@@ -46,14 +49,19 @@ body {
 .main {
     flex-grow: 1;
     background-color: #ffe4c4;
-    padding-top: 10px;
+    /* padding-top: 10px; */
 }
-
+.who {
+    background-color: #857e7e;
+}
 .who__row {
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
+
+    padding: 10px;
+    border-radius: 100px 0 0 100px;
 }
 
 .who__photo {
@@ -70,6 +78,7 @@ body {
 .who__text {
     flex-basis: 50%;
     text-align: center;
+    color: #ffffff;
 }
 
 .who__title {
@@ -84,18 +93,144 @@ body {
     border-bottom: 2px solid #000000 ;
 }
 
-.contacts__item a {
-    color: #000000;
-}
 
-.code__subtitle {
-    padding-left: 50px;
-}
 
-.code__coding {
+
+.content {
+}
+.content__row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.content__right {
+    order: 2;
+    flex: 1 1 auto;
+}
+.about_me {
+}
+.about_me__title {
+}
+.title {
+}
+.about_me__text {
+}
+.code {
+}
+.code__title {
+}
+.code__main {
     position: relative;
-    right: 100px;
+    height: 180px;
+    overflow: hidden;
 }
+.code__subtitle {
+}
+.code__coding {
+    position: absolute;
+    left: -250px;
+    top: 0;
+}
+.work {
+}
+.work__title {
+}
+.work__content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+}
+.work__link {
+    display: block;
+    flex: 0 0 48%;
+}
+.work__link:hover {
+    box-shadow: 0 0 20px #000000;
+}
+.work__link img {
+    width: 100%;
+}
+.education {
+}
+.education__title {
+}
+.education__text {
+}
+.content__left {
+    order: 1;
+    flex: 0 0 350px;
+}
+.contacts {
+}
+.contacts__title {
+}
+.contacts__list {
+    list-style: none;
+    padding: 0;
+}
+.contacts__item {
+    background-size: 20px;
+    background-repeat: no-repeat;
+    padding: 0 0 5px 30px;
+}
+.github {
+    background-image: url('img/icons8-github.svg');
+}
+.discord {
+    background-image: url('img/icons8-discord.svg');
+}
+.telegram {
+    background-image: url('img/icons8-телеграмма-app.svg');
+}
+.email {
+    background-image: url('img/icons8-почта.svg');
+}
+.skills {
+}
+.skills__title {
+}
+.skills__list {
+    list-style: none;
+    padding: 0;
+}
+.skills__item {
+    background-size: 20px;
+    background-repeat: no-repeat;
+    padding: 0 0 5px 30px;
+}
+.html {
+    background-image: url('img/icons8-html.svg');
+}
+.css {
+    background-image: url('img/icons8-css.svg');
+}
+.js {
+    background-image: url('img/icons8-js.svg');
+}
+.git {
+    background-image: url('img/icons8-git.svg');
+}
+.nodejs {
+    background-image: url('img/icons8-nodejs.svg');
+
+}
+.languages {
+}
+.languages__title {
+}
+.languages__list {
+}
+.languages__item {
+    /* padding: 0 0 5px 0; */
+}
+.certificate__link {
+    display: block;
+}
+.certificate__link img {
+    width: 100%;
+}
+
 
 .footer {
     background-color: #857e7e;
@@ -127,4 +262,14 @@ body {
 
 .rsschool__logo {
     width: 80px;
+}
+
+@media (max-width: 768px) {
+    .content__row {
+        display: block;
+        /* flex-direction: column; */
+    }
+    .certificate {
+        display: none;
+    }
 }
